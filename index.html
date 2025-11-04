@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Essay Writing Cheat Sheet</title>
+    <style>
+        @media print {
+            body { margin: 0.5in; }
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 9pt;
+            line-height: 1.3;
+            column-count: 2;
+            column-gap: 20px;
+            margin: 0.5in;
+            color: #2c3e50;
+        }
+        
+        h1 {
+            column-span: all;
+            text-align: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px;
+            margin: 0 0 15px 0;
+            font-size: 18pt;
+            border-radius: 5px;
+        }
+        
+        h2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 6px 10px;
+            margin: 12px 0 6px 0;
+            font-size: 11pt;
+            border-radius: 3px;
+            break-after: avoid;
+        }
+        
+        h3 {
+            background: #3498db;
+            color: white;
+            padding: 4px 8px;
+            margin: 8px 0 4px 0;
+            font-size: 9pt;
+            border-radius: 3px;
+            break-after: avoid;
+        }
+        
+        .assessment-box {
+            background: #e8f4f8;
+            border-left: 4px solid #3498db;
+            padding: 8px;
+            margin: 8px 0;
+            border-radius: 3px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 8px 0;
+            font-size: 8pt;
+            break-inside: avoid;
+        }
+        
+        th {
+            background: #34495e;
+            color: white;
+            padding: 4px;
+            text-align: left;
+            font-size: 8pt;
+        }
+        
+        td {
+            border: 1px solid #ddd;
+            padding: 3px 4px;
+        }
+        
+        .correct {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .incorrect {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .tip-box {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 6px;
+            margin: 6px 0;
+            font-size: 8pt;
+            border-radius: 3px;
+        }
+        
+        .do-list {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 6px;
+            margin: 4px 0;
+            font-size: 8pt;
+            break-inside: avoid;
+        }
+        
+        .dont-list {
+            background: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 6px;
+            margin: 4px 0;
+            font-size: 8pt;
+            break-inside: avoid;
+        }
+        
+        ul {
+            margin: 4px 0;
+            padding-left: 20px;
+        }
+        
+        li {
+            margin: 2px 0;
+            line-height: 1.3;
+        }
+        
+        .vocab-table tr:nth-child(even) {
+            background: #f8f9fa;
+        }
+        
+        .vocab-table tr:first-child {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .highlight-purple {
+            background: #e8daef;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        .highlight-blue {
+            background: #d6eaf8;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        .highlight-green {
+            background: #d5f4e6;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+        
+        .step-box {
+            background: #f0f8ff;
+            border: 2px solid #4169e1;
+            padding: 6px;
+            margin: 6px 0;
+            border-radius: 3px;
+            break-inside: avoid;
+        }
+        
+        strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+<h1>📝 ESSAY WRITING CHEAT SHEET</h1>
+
+<h2>🎯 ASSESSMENT CRITERIA</h2>
+
+<table>
+    <tr>
+        <th>Criterion</th>
+        <th>Marks</th>
+        <th>What It Measures</th>
+    </tr>
+    <tr>
+        <td><strong>Content</strong></td>
+        <td>5</td>
+        <td>Answer all parts, relevant arguments</td>
+    </tr>
+    <tr>
+        <td><strong>Comm. Achievement</strong></td>
+        <td>3-4</td>
+        <td>Appropriate register & language</td>
+    </tr>
+    <tr>
+        <td><strong>Organisation</strong></td>
+        <td>3-4</td>
+        <td>Clear structure, transitions</td>
+    </tr>
+    <tr>
+        <td><strong>Language</strong></td>
+        <td>2-4</td>
+        <td>Grammar, vocabulary, complexity</td>
+    </tr>
+</table>
+
+<div class="assessment-box">
+    <strong>Content (5 marks)</strong><br>
+    <span class="correct">✓</span> Address ALL parts of question<br>
+    <span class="correct">✓</span> Explain position clearly<br>
+    <span class="correct">✓</span> Use relevant examples<br>
+    <span class="incorrect">✗</span> Don't ignore required elements
+</div>
+
+<div class="assessment-box">
+    <strong>Communicative Achievement (3-4)</strong><br>
+    <span class="correct">✓</span> Maintain formal register<br>
+    <span class="correct">✓</span> Language appropriate to genre<br>
+    <span class="incorrect">✗</span> Don't mix informal & formal
+</div>
+
+<div class="assessment-box">
+    <strong>Organisation (3-4 marks)</strong><br>
+    <span class="correct">✓</span> Clear paragraphs, distinct topics<br>
+    <span class="correct">✓</span> Logical progression of ideas<br>
+    <span class="correct">✓</span> Effective linking devices<br>
+    <span class="incorrect">✗</span> Don't place conclusions mid-essay
+</div>
+
+<div class="assessment-box">
+    <strong>Language (2-4 marks)</strong><br>
+    <span class="correct">✓</span> Advanced vocabulary<br>
+    <span class="correct">✓</span> Complex sentence structures<br>
+    <span class="correct">✓</span> Grammatical accuracy<br>
+    <span class="incorrect">✗</span> Avoid tense inconsistencies
+</div>
+
+<h2>📐 ESSAY STRUCTURE</h2>
+
+<div class="step-box">
+<h3>Introduction</h3>
+<ol style="margin: 4px 0; padding-left: 18px; font-size: 8pt;">
+    <li>Start with relevant general statement</li>
+    <li>Narrow to specific topic (2-3 sentences)</li>
+    <li>End with thesis statement (your argument)</li>
+</ol>
+</div>
+
+<div class="step-box">
+<h3>Body Paragraphs (7-Step Model)</h3>
+<ol style="margin: 4px 0; padding-left: 18px; font-size: 8pt;">
+    <li><span class="highlight-purple">Signpost</span> - What is this about?</li>
+    <li><span class="highlight-blue">State point</span> - Your argument</li>
+    <li><span class="highlight-green">Support</span> - Expand/explain</li>
+    <li><strong>Illustrate</strong> - Evidence/examples</li>
+    <li><strong>Infer</strong> - What does this mean?</li>
+    <li><strong>Link</strong> - Connect to question</li>
+    <li><strong>Transition</strong> - Lead to next</li>
+</ol>
+</div>
+
+<div class="do-list">
+<strong>Conclusion - DO:</strong><br>
+<span class="correct">✓</span> Summarize main argument<br>
+<span class="correct">✓</span> Highlight why it matters<br>
+<span class="correct">✓</span> Link back to question
+</div>
+
+<div class="dont-list">
+<strong>Conclusion - DON'T:</strong><br>
+<span class="incorrect">✗</span> Introduce new information<br>
+<span class="incorrect">✗</span> Just repeat introduction<br>
+<span class="incorrect">✗</span> Be abrupt ("hit and run")
+</div>
+
+<h2>🔄 FORMAL vs INFORMAL LANGUAGE</h2>
+
+<table class="vocab-table">
+    <tr>
+        <td><strong>✗ INFORMAL</strong></td>
+        <td><strong>✓ FORMAL</strong></td>
+    </tr>
+    <tr>
+        <td>look at</td>
+        <td><strong>examine</strong></td>
+    </tr>
+    <tr>
+        <td>think about</td>
+        <td><strong>consider</strong></td>
+    </tr>
+    <tr>
+        <td>look forward to</td>
+        <td><strong>anticipate</strong></td>
+    </tr>
+    <tr>
+        <td>wipe out</td>
+        <td><strong>eliminate</strong></td>
+    </tr>
+    <tr>
+        <td>set up</td>
+        <td><strong>establish</strong></td>
+    </tr>
+    <tr>
+        <td>get</td>
+        <td><strong>receive, obtain</strong></td>
+    </tr>
+    <tr>
+        <td>give</td>
+        <td><strong>provide, offer</strong></td>
+    </tr>
+    <tr>
+        <td>a lot</td>
+        <td><strong>many, numerous</strong></td>
+    </tr>
+</table>
+
+<h3>💪 Strong Vocabulary Replacements</h3>
+
+<table class="vocab-table">
+    <tr>
+        <td><strong>✗ WEAK</strong></td>
+        <td><strong>✓ STRONG</strong></td>
+    </tr>
+    <tr>
+        <td>very important</td>
+        <td><strong>crucial</strong></td>
+    </tr>
+    <tr>
+        <td>very sure</td>
+        <td><strong>convinced</strong></td>
+    </tr>
+    <tr>
+        <td>very good</td>
+        <td><strong>ideal, excellent</strong></td>
+    </tr>
+    <tr>
+        <td>very bad</td>
+        <td><strong>poor, disastrous</strong></td>
+    </tr>
+    <tr>
+        <td>very weak argument</td>
+        <td><strong>unconvincing</strong></td>
+    </tr>
+    <tr>
+        <td>very strong argument</td>
+        <td><strong>robust</strong></td>
+    </tr>
+</table>
+
+<h2>🚫 NEVER USE CONTRACTIONS</h2>
+
+<table class="vocab-table">
+    <tr>
+        <td><strong>✗ WRONG</strong></td>
+        <td><strong>✓ CORRECT</strong></td>
+    </tr>
+    <tr>
+        <td>can't</td>
+        <td><strong>cannot</strong></td>
+    </tr>
+    <tr>
+        <td>didn't</td>
+        <td><strong>did not</strong></td>
+    </tr>
+    <tr>
+        <td>won't</td>
+        <td><strong>will not</strong></td>
+    </tr>
+    <tr>
+        <td>it's</td>
+        <td><strong>it is</strong></td>
+    </tr>
+    <tr>
+        <td>they're</td>
+        <td><strong>they are</strong></td>
+    </tr>
+    <tr>
+        <td>you're</td>
+        <td><strong>you are</strong></td>
+    </tr>
+</table>
+
+<h2>🔗 TRANSITION WORDS</h2>
+
+<div style="font-size: 8pt; line-height: 1.4;">
+<strong style="color: #8e44ad;">Similarity:</strong> likewise, similarly, in the same way<br>
+<strong style="color: #c0392b;">Contrast:</strong> however, nevertheless, on the other hand<br>
+<strong style="color: #16a085;">Causation:</strong> thus, consequently, therefore, hence<br>
+<strong style="color: #d35400;">Sequence:</strong> first, then, subsequently, finally<br>
+<strong style="color: #2980b9;">Addition:</strong> furthermore, moreover, also, in addition
+</div>
+
+<h2>⚠️ COMMON ERRORS TO AVOID</h2>
+
+<div class="dont-list">
+<strong>Comma Splices:</strong><br>
+<span class="incorrect">✗</span> I cannot remember my password, I created it long ago<br>
+<span class="correct">✓</span> I cannot remember my password; I created it long ago
+</div>
+
+<div class="dont-list">
+<strong>Tense Inconsistency:</strong><br>
+<span class="incorrect">✗</span> The authors provided a protocol and offer an alternative<br>
+<span class="correct">✓</span> The authors provide a protocol and offer an alternative
+</div>
+
+<div class="dont-list">
+<strong>Misplaced Modifiers:</strong><br>
+<span class="incorrect">✗</span> By working late, the essay was finished<br>
+<span class="correct">✓</span> By working late, I finished the essay
+</div>
+
+<div class="dont-list">
+<strong>Value Judgments:</strong><br>
+<span class="incorrect">✗</span> The paper included many good references<br>
+<span class="correct">✓</span> The paper included many relevant references
+</div>
+
+<h2>⏰ VERB TENSES</h2>
+
+<table>
+    <tr>
+        <th>Tense</th>
+        <th>When to Use</th>
+        <th>Example</th>
+    </tr>
+    <tr>
+        <td><strong>Present</strong></td>
+        <td>Factual topics, references</td>
+        <td>"The author argues..."</td>
+    </tr>
+    <tr>
+        <td><strong>Past</strong></td>
+        <td>Past events, studies</td>
+        <td>"The study showed..."</td>
+    </tr>
+    <tr>
+        <td><strong>Future</strong></td>
+        <td>Events that will occur</td>
+        <td>"Laws will need..."</td>
+    </tr>
+</table>
+
+<h2>📌 PUNCTUATION GUIDE</h2>
+
+<div style="font-size: 8pt; line-height: 1.5;">
+<h3>Semicolons (;)</h3>
+• Join closely linked independent clauses<br>
+• Example: <em>I chose science; I didn't want medicine</em>
+
+<h3>Colons (:)</h3>
+• Introduce lists, examples, explanations<br>
+• Example: <em>Three skills: reading, writing, analysis</em>
+
+<h3>Commas (,)</h3>
+<span class="correct">✓</span> After introductory clauses<br>
+<span class="correct">✓</span> Separate 3+ items<br>
+<span class="incorrect">✗</span> NOT between independent clauses alone
+</div>
+
+<h2>🔤 COMMONLY CONFUSED WORDS</h2>
+
+<table class="vocab-table">
+    <tr>
+        <td>accept</td>
+        <td>except</td>
+    </tr>
+    <tr>
+        <td>affect</td>
+        <td>effect</td>
+    </tr>
+    <tr>
+        <td>its</td>
+        <td>it's</td>
+    </tr>
+    <tr>
+        <td>less</td>
+        <td>fewer</td>
+    </tr>
+    <tr>
+        <td>their</td>
+        <td>there / they're</td>
+    </tr>
+    <tr>
+        <td>your</td>
+        <td>you're</td>
+    </tr>
+    <tr style="background: #ffcccc;">
+        <td><strong>could of ✗</strong></td>
+        <td><strong>could have ✓</strong></td>
+    </tr>
+</table>
+
+<h2>🚨 NEVER USE IN ESSAYS</h2>
+
+<div style="font-size: 8pt; background: #fff0f0; padding: 8px; border-radius: 3px; border: 2px solid #e74c3c;">
+<strong style="color: #c0392b;">Colloquial:</strong> cool, basically, literally, just, really<br>
+<strong style="color: #c0392b;">Stance adjuncts:</strong> obviously, naturally, of course, undoubtedly<br>
+<strong style="color: #c0392b;">Clichés:</strong> at the end of the day, think outside the box<br>
+<strong style="color: #c0392b;">Shortened:</strong> info, asap, telly
+</div>
+
+<h2>✍️ SENTENCE STRUCTURE TIPS</h2>
+
+<div class="do-list">
+<strong>Active vs Passive Voice:</strong><br>
+<span class="correct">✓ Active (preferred):</span> Alan Turing broke the code<br>
+<span class="incorrect">✗ Passive:</span> The code was broken by Alan Turing
+</div>
+
+<div class="tip-box">
+<strong>💡 Quick Tips:</strong><br>
+• Use <strong>Subject-Verb-Object</strong> structure<br>
+• Split long sentences: Replace 'and'/'but' with periods/semicolons<br>
+• Active voice = shorter, clearer, more engaging
+</div>
+
+<h2>✅ 5-MINUTE CHECKING METHOD</h2>
+
+<div class="step-box">
+<ol style="margin: 4px 0; padding-left: 18px; font-size: 8pt;">
+    <li>✓ Does essay answer the question?</li>
+    <li>✓ Do main points flow logically?</li>
+    <li>✓ Are sentences clear and grammatical?</li>
+    <li>✓ Check for spelling errors</li>
+    <li>✓ Read slowly, word-for-word</li>
+</ol>
+</div>
+
+<div class="tip-box">
+<strong>⏱️ Exam tip:</strong> 5 min planning + 5 min checking
+</div>
+
+<h2>⭐ TOP ESSAY SUCCESS FACTORS</h2>
+
+<div class="do-list" style="font-size: 8pt;">
+<span class="correct">✓</span> Advanced vocabulary (e.g., flourish intellectually, part and parcel)<br>
+<span class="correct">✓</span> Clear structure with effective transitions<br>
+<span class="correct">✓</span> Complex sentences with grammatical accuracy<br>
+<span class="correct">✓</span> Address all required points with clear position<br>
+<span class="correct">✓</span> Consistent formal register throughout
+</div>
+
+</body>
+</html>
