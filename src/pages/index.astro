@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Legend from '../components/Legend.astro';
+import AssessmentCriteria from '../components/AssessmentCriteria.astro';
+import EssayStructure from '../components/EssayStructure.astro';
+import Transitions from '../components/Transitions.astro';
+import LanguageStyle from '../components/LanguageStyle.astro';
+import CommonErrors from '../components/CommonErrors.astro';
+import ReferenceTables from '../components/ReferenceTables.astro';
+import Glossary from '../components/Glossary.astro';
+import Footer from '../components/Footer.astro';
+import '../styles/global.css';
+---
+
+<Layout title="Essay Writing Cheat Sheet">
+    <main class="container">
+        <Header />
+        <Legend />
+
+        <div class="cheat-grid">
+            <AssessmentCriteria />
+            <EssayStructure />
+            <Transitions />
+            <LanguageStyle />
+            <CommonErrors />
+            <ReferenceTables />
+        </div>
+
+        <Glossary />
+        <Footer />
+    </main>
+</Layout>

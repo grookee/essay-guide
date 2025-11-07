@@ -1,0 +1,12 @@
+---
+interface Props {
+  type: 'do' | 'dont' | 'tip' | 'info';
+  class?: string;
+}
+
+const { type, class: className } = Astro.props;
+---
+
+<article class:list={['callout', type, className]}>
+  <slot />
+</article>
