@@ -8,15 +8,35 @@ A dark-mode, printable essay writing reference for students.
 
 - 🌙 Dark/light mode with auto-switching for print
 - 📱 Fully responsive
-- ⚡ Single HTML file, no build step
+- ⚡ Built with Astro for easy maintenance
+- 🎨 Gruvbox color scheme
+- 🧩 Component-based architecture
 
 ## What's Included
 
 Assessment criteria, essay structure, language tips, common errors, verb tenses, confused words, glossary, and more.
 
+## Development
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
 ## Usage
 
-Just open `index.html` in a browser. That's it.
+For development, run `npm run dev` and open `http://localhost:4321` in your browser.
+
+For production, run `npm run build` and deploy the `dist/` folder to your web server.
 
 For printing: `Ctrl/Cmd+P` → Save as PDF. Theme switches automatically.
 
