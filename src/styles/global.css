@@ -413,7 +413,7 @@ table.striped tbody tr:nth-child(even) {
     color: var(--gb-purple);
 }
 
-/* Print Styles */
+/* Print Styles - Optimized for A4 PDF Export */
 @media print {
     @page {
         size: A4;
