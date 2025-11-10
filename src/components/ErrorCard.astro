@@ -1,0 +1,20 @@
+---
+interface Props {
+  type: 'bad' | 'good';
+  errorName: string;
+  badgeText: string;
+  tipText: string;
+}
+
+const { type, errorName, badgeText, tipText } = Astro.props;
+---
+
+<div class:list={[type === 'bad' ? 'card-bad bad' : 'card-good good']}>
+    <div class="label">
+        <span class="icon"></span>
+        <span class="error-name">{errorName}</span>
+        <span class="badge-small">{badgeText}</span>
+    </div>
+    <slot />
+    <span class="micro-tip">{tipText}</span>
+</div>
