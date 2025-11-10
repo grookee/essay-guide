@@ -32,6 +32,16 @@ jobs:
       - name: Build with Astro
         run: bun run build
       
+      - name: Ensure no Jekyll processing
+        run: |
+          BUILD_DIR="./dist"
+          # adjust BUILD_DIR if your Astro output is different
+          mkdir -p "$BUILD_DIR"
+          touch "$BUILD_DIR/.nojekyll"
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
